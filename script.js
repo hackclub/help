@@ -4,6 +4,28 @@
     const themetoggle = document.querySelector('.themetoggle');
     const navlinks = document.querySelectorAll('.links a[href^="#"]');
 
+    // populate the sections with the icons
+    const herolinkscontainer = document.querySelector("#herolinkscontainer")
+    const sections = [
+        { name: "Events", href: "#events", icon: "event-check" },
+        {name: "Clubs", href: "#clubs", icon: "clubs" },
+        {name: "Personal info", href: "#auth", icon: "profile" },
+        {name: "HCB", href: "#hcb", icon: "bank" },
+        {name: "Track time", href: "#coding-time", icon: "timer" }
+    ]
+    sections.forEach((section) => {
+        herolinkscontainer.innerHTML += `
+            <a class="herolink" href="${section.href}">
+                <img src="https://icons.hackclub.com/api/icons/white/${section.icon}" class="herolinkicon">
+                <div class="herolinkdesc">
+                    <p>${section.name}</p>
+                    <img src="https://icons.hackclub.com/api/icons/white/right-caret" class="herolinkdescicon">
+                </div>
+            </a>
+        `
+    })
+
+
     function openlinksinnewtab(root) {
         const scope = root || document;
         const links = scope.querySelectorAll('a[href]:not([href^="#"])');
@@ -24,7 +46,7 @@
         if (!themetoggle) return;
 
         const isdarktheme = document.body.classList.contains('dark-theme');
-        themetoggle.textContent = isdarktheme ? '☀️' : '🌙';
+        themetoggle.innerHTML = isdarktheme ? ' <img src="https://icons.hackclub.com/api/icons/white/sun" class="toggleicon">' : ' <img src="https://icons.hackclub.com/api/icons/black/moon" class="toggleicon">';
         themetoggle.setAttribute('aria-label', isdarktheme ? 'Switch to light mode' : 'Switch to dark mode');
         themetoggle.setAttribute('title', isdarktheme ? 'Switch to light mode' : 'Switch to dark mode');
     }

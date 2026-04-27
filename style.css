@@ -76,6 +76,9 @@ a:hover {
     display: flex;
     align-items: center;
 }
+.navleft {
+    flex: 1
+}
 
 .navcontainer {
     width: 100%;
@@ -83,7 +86,6 @@ a:hover {
     margin: 0 auto;
     padding: 0 20px 0 220px;
     display: flex;
-    justify-content: flex-end;
     align-items: center;
     position: relative;
 }
@@ -106,6 +108,8 @@ a:hover {
     height: 64px;
     transform-origin: top left;
     transition: transform 0.22s ease;
+    top: -20px;
+    position:relative;
 }
 
 .brand:hover .flag {
@@ -133,6 +137,9 @@ a:hover {
     transform-origin: center;
     transition: transform 0.16s ease, opacity 0.16s ease, background-color 0.24s ease;
 }
+.toggleicon {
+    width: 24px;
+}
 
 .links {
     display: flex;
@@ -140,6 +147,9 @@ a:hover {
     gap: 0.9rem;
 }
 
+.headersubtitle {
+    color: var(--muted);
+}
 .link {
     color: var(--text);
     font-weight: 700;
@@ -214,19 +224,33 @@ a:hover {
 }
 
 .hero {
-    max-width: 1200px;
-    height: 100vh;
-    margin: 0 auto;
-    padding: 30px 20px 60px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 40px;
+    position: relative;
+    padding: 30px 20px 60px;
+    max-width: 100%;
+    
+}
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-image: url("/images/hero-banner.jpg");
+    filter: brightness(30%);
+    background-size: cover;
+    background-position: center;
 }
 
 .herocontent {
     flex: 1;
-    max-width: 600px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
 }
 
 .herotitle {
@@ -235,14 +259,57 @@ a:hover {
     line-height: 1.1;
     letter-spacing: -0.04em;
     margin-bottom: 1.5rem;
-    color: var(--ink);
+    color: var(--white);
+    text-align: center;
 }
 
 .herosubtitle {
     font-size: 1.25rem;
-    color: var(--muted);
+    color: var(--white);
     margin-bottom: 2rem;
     line-height: 1.6;
+    text-align: center;
+}
+
+.herolinksparent {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    justify-content: center;
+}
+.herolink {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 120px;
+}
+.herolinkdesc {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.herolinkdesc p {
+    font-weight: bold;
+    color: var(--white);
+}
+.herolinkdescicon {
+    width: 24px;
+}
+.herolinkicon {
+    position: relative;
+    left: -8px;
+    width: 60px;
+}
+.herosubtitletext {
+    color: var(--muted);
+    margin-top: 12px;
+    font-style: italic;
 }
 
 .btn {
@@ -292,16 +359,6 @@ a:hover {
 }
 
 @media (max-width: 900px) {
-    .hero {
-        flex-direction: column;
-        text-align: center;
-        padding-top: 40px;
-    }
-    .herocontent {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
     .herotitle {
         font-size: 2.75rem;
         text-align: center;
@@ -435,8 +492,6 @@ a:hover {
     width: 56px;
     height: 56px;
     border-radius: 14px;
-    background: #f3f6fb;
-    border: 1px solid #dde6f2;
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -521,8 +576,6 @@ a:hover {
     width: 56px;
     height: 56px;
     border-radius: 14px;
-    background: #f3f6fb;
-    border: 1px solid #dde6f2;
     display: inline-flex;
     align-items: center;
     justify-content: center;

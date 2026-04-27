@@ -27,22 +27,25 @@
 
     <nav class="nav">
         <div class="navcontainer container wide">
-            <a href="https://hackclub.com/" class="brand" aria-label="Hack Club homepage">
-                <img class="flag" src="https://assets.hackclub.com/flag-orpheus-top.svg" alt="Hack Club" />
-            </a>
-            <button class="toggle" type="button" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="togglebar"></span>
-                <span class="togglebar"></span>
-                <span class="togglebar"></span>
-            </button>
-            <div class="links" id="primarynav">
-                <a href="#events" class="link">Events</a>
-                <a href="#clubs" class="link">Clubs</a>
-                <a href="#auth" class="link">Auth</a>
-                <a href="#hcb" class="link">HCB</a>
-                <a href="#coding-time" class="link">Coding Time</a>
-                <a href="https://hackclub.enterprise.slack.com/archives/C07TM4C0AQ5" class="cta">Get Help</a>
-                <button class="themetoggle" type="button" aria-label="Switch to dark mode" title="Toggle theme">🌙</button>
+            <div class="navleft">
+                <a href="https://hackclub.com/" class="brand" aria-label="Hack Club homepage">
+                    <img class="flag" src="https://assets.hackclub.com/flag-orpheus-top.svg" alt="Hack Club" />
+                </a>
+                <h3>Help and Support</h3>
+            </div>
+            <div class="navright">
+                <button class="toggle" type="button" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="togglebar"></span>
+                    <span class="togglebar"></span>
+                    <span class="togglebar"></span>
+                </button>
+                <div class="links" id="primarynav">
+                    <p class="headersubtitle">Still need help?</p>
+                    <a href="https://hackclub.enterprise.slack.com/archives/C07TM4C0AQ5" class="cta">Go to the Help Channel</a>
+                    <button class="themetoggle" type="button" aria-label="Switch to dark mode" title="Toggle theme">
+                        <img src="https://icons.hackclub.com/api/icons/black/moon" class="toggleicon">
+                    </button>
+                </div>
             </div>
         </div>
     </nav>
@@ -50,14 +53,10 @@
     <main class="maincontent">
         <section class="hero container wide">
             <div class="herocontent">
-                <h1 class="herotitle title">Welcome to Hack Club support!</h1>
-                <p class="herosubtitle lead">You'll find common ways to get help for everything on Hack Club.</p>
-                <div class="heroactions">
-                    <a href="#events" class="btn primarybtn">Find help</a>
-                </div>
-            </div>
-            <div class="heroart">
-                <img src="https://assets.hackclub.com/icon-rounded.svg" alt="Hack Club Icon" />
+                <h1 class="herotitle title">Hack Club Support</h1>
+                <p class="herosubtitle lead">Find common ways to get help for everything on Hack Club.</p>
+                <div class="herolinksparent" id="herolinkscontainer"></div>
+                <p class="herosubtitletext">Our phone number is <a href="tel:18556254225">1-855-625-HACK</a>.</p>
             </div>
         </section>
 
@@ -254,9 +253,9 @@
                 <div class="card bordered">
                     <div class="icon"><span class="emoji" aria-hidden="true">❓</span></div>
                     <h3>Help setting up or using Lapse</h3>
-                    <p>If you are having issues setting up or using Lapse for time-lapse based time tracking, leave a
+                    <p>If you are having issues setting up or using <a href="https://lapse.hackclub.com">Lapse</a> for time-lapse based time tracking, leave a
                         post on the #lapse-help channel.</p>
-                    <a href="https://hackclub.enterprise.slack.com/archives/C09NVLWU61E" class="cardlink">Contact lapse
+                    <a href="https://hackclub.enterprise.slack.com/archives/C09NVLWU61E" class="cardlink">Contact Lapse
                         support</a>
                 </div>
             </div>
