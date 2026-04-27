@@ -138,7 +138,8 @@
         { name: 'Sprig', image: 'images/sprig.png', channel: '#sprig', link: 'https://hackclub.enterprise.slack.com/archives/C02UN35M7LG' },
         { name: 'Construct', image: 'images/construct.png', channel: '#construct-help', link: 'https://hackclub.enterprise.slack.com/archives/C09QSTUV88Y' },
         { name: 'Flavortown', image: 'images/flavortown.png', channel: '#flavortown-help', link: 'https://hackclub.enterprise.slack.com/archives/C09MATKQM8C' },
-        { name: 'Campfire Flagship', image: 'images/campfire.png', channel: '#campfire-flagship-help', link: 'https://hackclub.enterprise.slack.com/archives/C0A6KLGRZQE' }
+        { name: 'Campfire Flagship', image: 'images/campfire.png', channel: '#campfire-flagship-help', link: 'https://hackclub.enterprise.slack.com/archives/C0A6KLGRZQE' },
+        { name: 'Beest', image: 'images/beest.png', channel: '#beest-help', link: 'https://hackclub.enterprise.slack.com/archives/C0AQ4T1CWH2' }
     ];
 
     function rendereventcard(event) {
