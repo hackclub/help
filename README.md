@@ -8,6 +8,6 @@ Found an issue or want to improve something? Contributions are welcome! Feel fre
 
 ## Credits?
 
-Built and maintained by **[Dheeraj](https://github.com/17sdheeraj)**, **[Sankarshan](https://github.com/Sankarshan-T)**, and the **#help team** :)
+Built and maintained by **[Dheeraj](https://github.com/17sdheeraj)**, **[Sankarshan](https://github.com/Sankarshan-T)**, **[normalperson543](https://github.com/normalperson543)** and the **#help team** :)
 
 Made with lots of coffee ☕.

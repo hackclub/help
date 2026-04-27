@@ -6,6 +6,28 @@ import './style.css';
     const themetoggle = document.querySelector('.themetoggle');
     const navlinks = document.querySelectorAll('.links a[href^="#"]');
 
+
+    // populate the sections with the icons
+    const herolinkscontainer = document.querySelector("#herolinkscontainer")
+    const sections = [
+        { name: "Events", href: "#events", icon: "event-check" },
+        {name: "Clubs", href: "#clubs", icon: "clubs" },
+        {name: "Personal info", href: "#auth", icon: "profile" },
+        {name: "HCB", href: "#hcb", icon: "bank" },
+        {name: "Track time", href: "#coding-time", icon: "timer" }
+    ]
+    sections.forEach((section) => {
+        herolinkscontainer.innerHTML += `
+            <a class="herolink" href="${section.href}">
+                <img src="https://icons.hackclub.com/api/icons/white/${section.icon}" class="herolinkicon">
+                <div class="herolinkdesc">
+                    <p>${section.name}</p>
+                    <img src="https://icons.hackclub.com/api/icons/white/right-caret" class="herolinkdescicon">
+                </div>
+            </a>
+        `
+    })
+
     function openlinksinnewtab(root) {
         const scope = root || document;
         const links = scope.querySelectorAll('a[href]:not([href^="#"])');
@@ -26,7 +48,7 @@ import './style.css';
         if (!themetoggle) return;
 
         const isdarktheme = document.body.classList.contains('dark-theme');
-        themetoggle.textContent = isdarktheme ? '☀️' : '🌙';
+        themetoggle.innerHTML = isdarktheme ? ' <img src="https://icons.hackclub.com/api/icons/white/sun" class="toggleicon">' : ' <img src="https://icons.hackclub.com/api/icons/black/moon" class="toggleicon">';
         themetoggle.setAttribute('aria-label', isdarktheme ? 'Switch to light mode' : 'Switch to dark mode');
         themetoggle.setAttribute('title', isdarktheme ? 'Switch to light mode' : 'Switch to dark mode');
     }
@@ -101,25 +123,25 @@ import './style.css';
     if (!searchinput || !statustext || !eventsgrid) return;
 
     const events = [
-        { name: 'Resolution', channel: '#resolution-help', link: 'https://hackclub.enterprise.slack.com/archives/C0A80KVN6MA' },
-        { name: 'Raspapi', image: 'images/rasapi.png', channel: '#raspapi', link: 'https://hackclub.enterprise.slack.com/archives/C07UZSKJQRX' },
-        { name: 'Sleepover', image: 'images/sleepover.png', channel: '#athena-sleepover', link: 'https://hackclub.enterprise.slack.com/archives/C0A9UNRF96V' },
-        { name: 'Enclosure', image: 'images/enclosure.png', channel: '#enclosure-help', link: 'https://hackclub.enterprise.slack.com/archives/C0AQR65RE02' },
-        { name: 'Trailit', image: 'images/trailit.png', channel: '#trailit-ysws', link: 'https://hackclub.enterprise.slack.com/archives/C0AGG8J6PLL' },
-        { name: 'Fallout', image: 'images/fallout.png', channel: '#fallout-help', link: 'https://hackclub.enterprise.slack.com/archives/C0ACJ290090' },
-        { name: 'Remixed', image: 'images/remixed.png', channel: '#remixed-help', link: 'https://hackclub.enterprise.slack.com/archives/C0AK7L0B9A6' },
-        { name: 'Hackcraft', image: 'images/hackcraft.png', channel: '#mc-modding', link: 'https://hackclub.enterprise.slack.com/archives/C07NQ5QAYNQ' },
-        { name: 'Stasis', image: 'images/stasis.png', channel: '#stasis-support', link: 'https://hackclub.enterprise.slack.com/archives/C09JP51FHNE' },
-        { name: 'Coeur', image: 'images/coeur.png', channel: '#coeur', link: 'https://hackclub.enterprise.slack.com/archives/C0A6MCHFFEU' },
-        { name: 'Boot', image: 'images/boot.png', channel: '#boot', link: 'https://hackclub.enterprise.slack.com/archives/C09EWDU9ZQT' },
-        { name: 'Hack Club: The Game', image: 'images/hctg.png', channel: '#hctg-help', link: 'https://hackclub.enterprise.slack.com/archives/C0A9XULS1SL' },
         { name: 'Boba Drops', image: 'images/boba.png', channel: '#boba', link: 'https://hackclub.enterprise.slack.com/archives/C06UJR8QW0M' },
-        { name: 'Horizons', image: 'images/horizons.png', channel: '#horizons-help', link: 'https://hackclub.enterprise.slack.com/archives/C0AFLAUT58A' },
-        { name: 'Sprig', image: 'images/sprig.png', channel: '#sprig', link: 'https://hackclub.enterprise.slack.com/archives/C02UN35M7LG' },
-        { name: 'Construct', image: 'images/construct.png', channel: '#construct-help', link: 'https://hackclub.enterprise.slack.com/archives/C09QSTUV88Y' },
-        { name: 'Flavortown', image: 'images/flavortown.png', channel: '#flavortown-help', link: 'https://hackclub.enterprise.slack.com/archives/C09MATKQM8C' },
+        { name: 'Boot', image: 'images/boot.png', channel: '#boot', link: 'https://hackclub.enterprise.slack.com/archives/C09EWDU9ZQT' },
+        { name: 'Beest', image: 'images/beest.png', channel: '#beest-help', link: 'https://hackclub.enterprise.slack.com/archives/C0AQ4T1CWH2' },
         { name: 'Campfire Flagship', image: 'images/campfire.png', channel: '#campfire-flagship-help', link: 'https://hackclub.enterprise.slack.com/archives/C0A6KLGRZQE' },
-        { name: 'Beest', image: 'images/beest.png', channel: '#beest-help', link: 'https://hackclub.enterprise.slack.com/archives/C0AQ4T1CWH2' }
+        { name: 'Coeur', image: 'images/coeur.png', channel: '#coeur', link: 'https://hackclub.enterprise.slack.com/archives/C0A6MCHFFEU' },
+        { name: 'Construct', image: 'images/construct.png', channel: '#construct-help', link: 'https://hackclub.enterprise.slack.com/archives/C09QSTUV88Y' },
+        { name: 'Enclosure', image: 'images/enclosure.png', channel: '#enclosure-help', link: 'https://hackclub.enterprise.slack.com/archives/C0AQR65RE02' },
+        { name: 'Fallout', image: 'images/fallout.png', channel: '#fallout-help', link: 'https://hackclub.enterprise.slack.com/archives/C0ACJ290090' },
+        { name: 'Flavortown', image: 'images/flavortown.png', channel: '#flavortown-help', link: 'https://hackclub.enterprise.slack.com/archives/C09MATKQM8C' },
+        { name: 'Hackcraft', image: 'images/hackcraft.png', channel: '#mc-modding', link: 'https://hackclub.enterprise.slack.com/archives/C07NQ5QAYNQ' },
+        { name: 'Hack Club: The Game', image: 'images/hctg.png', channel: '#hctg-help', link: 'https://hackclub.enterprise.slack.com/archives/C0A9XULS1SL' },
+        { name: 'Horizons', image: 'images/horizons.png', channel: '#horizons-help', link: 'https://hackclub.enterprise.slack.com/archives/C0AFLAUT58A' },
+        { name: 'Raspapi', image: 'images/rasapi.png', channel: '#raspapi', link: 'https://hackclub.enterprise.slack.com/archives/C07UZSKJQRX' },
+        { name: 'Remixed', image: 'images/remixed.png', channel: '#remixed-help', link: 'https://hackclub.enterprise.slack.com/archives/C0AK7L0B9A6' },
+        { name: 'Resolution', channel: '#resolution-help', link: 'https://hackclub.enterprise.slack.com/archives/C0A80KVN6MA' },
+        { name: 'Sleepover', image: 'images/sleepover.png', channel: '#athena-sleepover', link: 'https://hackclub.enterprise.slack.com/archives/C0A9UNRF96V' },
+        { name: 'Sprig', image: 'images/sprig.png', channel: '#sprig', link: 'https://hackclub.enterprise.slack.com/archives/C02UN35M7LG' },       
+        { name: 'Stasis', image: 'images/stasis.png', channel: '#stasis-support', link: 'https://hackclub.enterprise.slack.com/archives/C09JP51FHNE' },
+        { name: 'Trailit', image: 'images/trailit.png', channel: '#trailit-ysws', link: 'https://hackclub.enterprise.slack.com/archives/C0AGG8J6PLL' },
     ];
 
     function rendereventcard(event) {
