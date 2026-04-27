@@ -176,6 +176,10 @@ a:hover {
     font-weight: 700;
     text-decoration: none;
     box-shadow: 0 4px 14px rgba(236, 55, 80, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
 }
 
 .cta:hover {
@@ -323,6 +327,11 @@ a:hover {
     transition: transform 0.18s, box-shadow 0.24s, background-color 0.2s;
     border: none;
     text-decoration: none;
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    justify-content: center;
+    justify-self: center;
 }
 
 .primarybtn {
@@ -638,6 +647,9 @@ a:hover {
     box-shadow: 0 10px 30px rgba(0,0,0,0.05);
     border: 1px solid var(--line);
     transition: transform 0.15s, box-shadow 0.25s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .helpcard:hover {
