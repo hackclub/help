@@ -253,6 +253,7 @@ a:hover {
 .herocontent {
     flex: 1;
     width: 100%;
+    z-index: 1;
 }
 
 .herotitle {
@@ -314,6 +315,7 @@ a:hover {
     color: var(--muted);
     margin-top: 12px;
     font-style: italic;
+    text-align: center;
 }
 
 .btn {
