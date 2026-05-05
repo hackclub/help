@@ -142,6 +142,7 @@ import './style.css';
         { name: 'Sprig', image: 'images/sprig.png', channel: '#sprig', link: 'https://hackclub.enterprise.slack.com/archives/C02UN35M7LG' },       
         { name: 'Stasis', image: 'images/stasis.png', channel: '#stasis-support', link: 'https://hackclub.enterprise.slack.com/archives/C09JP51FHNE' },
         { name: 'Trailit', image: 'images/trailit.png', channel: '#trailit-ysws', link: 'https://hackclub.enterprise.slack.com/archives/C0AGG8J6PLL' },
+        { name: 'Hacklet', image: 'images/hacklet.png', channel: '#hacklet', link: 'https://hackclub.slack.com/archives/C08PJMATU8Y' },
     ];
 
     function rendereventcard(event) {
