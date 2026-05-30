@@ -114,7 +114,8 @@ a:hover {
     transform-origin: top left;
     transition: transform 0.22s ease;
     top: -20px;
-    position:relative;}
+    position:relative;
+}
 
 .brand:hover .flag {
     transform: rotate(-4deg);

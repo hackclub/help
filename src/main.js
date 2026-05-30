@@ -138,6 +138,7 @@ import './style.css';
         { name: 'Raspapi', image: 'images/rasapi.png', channel: '#raspapi', link: 'https://hackclub.enterprise.slack.com/archives/C07UZSKJQRX' },
         { name: 'Remixed', image: 'images/remixed.png', channel: '#remixed-help', link: 'https://hackclub.enterprise.slack.com/archives/C0AK7L0B9A6' },
         { name: 'Resolution', channel: '#resolution-help', link: 'https://hackclub.enterprise.slack.com/archives/C0A80KVN6MA' },
+        { name: 'Shipyard', image: 'images/shipyard.svg', channel: '#shipyard', link: 'https://hackclub.enterprise.slack.com/archives/C0A7AJRN97X' },
         { name: 'Sleepover', image: 'images/sleepover.png', channel: '#athena-sleepover', link: 'https://hackclub.enterprise.slack.com/archives/C0A9UNRF96V' },
         { name: 'Sprig', image: 'images/sprig.png', channel: '#sprig', link: 'https://hackclub.enterprise.slack.com/archives/C02UN35M7LG' },       
         { name: 'Stasis', image: 'images/stasis.png', channel: '#stasis-support', link: 'https://hackclub.enterprise.slack.com/archives/C09JP51FHNE' },
