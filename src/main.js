@@ -131,7 +131,7 @@ import './style.css';
         { name: 'Construct', image: 'images/construct.png', channel: '#construct-help', link: 'https://hackclub.enterprise.slack.com/archives/C09QSTUV88Y' },
         { name: 'Enclosure', image: 'images/enclosure.png', channel: '#enclosure-help', link: 'https://hackclub.enterprise.slack.com/archives/C0AQR65RE02' },
         { name: 'Fallout', image: 'images/fallout.png', channel: '#fallout-help', link: 'https://hackclub.enterprise.slack.com/archives/C0ACJ290090' },
-        { name: 'Flavortown', image: 'images/flavortown.png', channel: '#flavortown-help', link: 'https://hackclub.enterprise.slack.com/archives/C09MATKQM8C' },
+        { name: 'Stardance', image: 'images/stardance.png', channel: '#stardance-help', link: 'https://hackclub.enterprise.slack.com/archives/C0AP0NMSP3P' },
         { name: 'Hackcraft', image: 'images/hackcraft.png', channel: '#mc-modding', link: 'https://hackclub.enterprise.slack.com/archives/C07NQ5QAYNQ' },
         { name: 'Hack Club: The Game', image: 'images/hctg.png', channel: '#hctg-help', link: 'https://hackclub.enterprise.slack.com/archives/C0A9XULS1SL' },
         { name: 'Horizons', image: 'images/horizons.png', channel: '#horizons-help', link: 'https://hackclub.enterprise.slack.com/archives/C0AFLAUT58A' },
