@@ -31,7 +31,17 @@
                 <a href="https://hackclub.com/" class="brand" aria-label="Hack Club homepage">
                     <img class="flag" src="https://assets.hackclub.com/flag-orpheus-top.svg" alt="Hack Club" />
                 </a>
-                <h3>Help and Support</h3>
+                <div class="navtitlewrap">
+                    <span class="navtitle">Help &amp; Support</span>
+                    <nav class="navsections" aria-label="Page sections">
+                        <a href="#common-questions" class="navlink">FAQ</a>
+                        <a href="#events" class="navlink">Events</a>
+                        <a href="#clubs" class="navlink">Clubs</a>
+                        <a href="#auth" class="navlink">Auth</a>
+                        <a href="#hcb" class="navlink">HCB</a>
+                        <a href="#coding-time" class="navlink">Hackatime</a>
+                    </nav>
+                </div>
             </div>
             <div class="navright">
                 <button class="toggle" type="button" aria-expanded="false" aria-label="Toggle navigation">
@@ -40,13 +50,12 @@
                     <span class="togglebar"></span>
                 </button>
                 <div class="links" id="primarynav">
-                    <p class="headersubtitle">Still need help?</p>
                     <a href="https://hackclub.enterprise.slack.com/archives/C07TM4C0AQ5" class="cta">
-                        <img src="https://icons.hackclub.com/api/icons/white/slack" class="herolinkdescicon">
-                        Go to the Help Channel
+                        <img src="https://icons.hackclub.com/api/icons/white/slack" class="herolinkdescicon" alt="">
+                        Ask in #help
                     </a>
                     <button class="themetoggle" type="button" aria-label="Switch to dark mode" title="Toggle theme">
-                        <img src="https://icons.hackclub.com/api/icons/black/moon" class="toggleicon">
+                        <img src="https://icons.hackclub.com/api/icons/black/moon" class="toggleicon" alt="">
                     </button>
                 </div>
             </div>
@@ -60,6 +69,56 @@
                 <p class="herosubtitle lead">Find common ways to get help for everything on Hack Club.</p>
                 <div class="herolinksparent" id="herolinkscontainer"></div>
                 <p class="herosubtitletext">Our phone number is <a href="tel:18556254225">1-855-625-HACK</a>.</p>
+            </div>
+        </section>
+
+        <section class="section alt" id="common-questions">
+            <h2 class="sectiontitle title">Common questions</h2>
+            <p class="sectiondesc subtitle">Quick answers to the most frequently asked questions.</p>
+            <div class="faqaccordion container wide">
+
+                <details class="faqitem">
+                    <summary class="faqsummary">How do I verify my age for a Hack Club event?</summary>
+                    <div class="faqbody">
+                        <p>Go to <a href="https://auth.hackclub.com/verifications/document">Hack Club Auth</a> and upload a photo ID (passport, driver's license, or school ID). Verification usually takes less than a day. Make sure your name and date of birth are clearly visible.</p>
+                    </div>
+                </details>
+
+                <details class="faqitem">
+                    <summary class="faqsummary">How do I apply to start a Hack Club?</summary>
+                    <div class="faqbody">
+                        <p>Any high school student can start a Hack Club. Fill out the application at <a href="https://apply.hackclub.com">apply.hackclub.com</a> — it takes about 10 minutes. Once approved, you'll get access to workshops, a Slack community, and more.</p>
+                    </div>
+                </details>
+
+                <details class="faqitem">
+                    <summary class="faqsummary">How do I set up Hackatime to track my coding hours?</summary>
+                    <div class="faqbody">
+                        <p>Visit <a href="https://hackatime.hackclub.com/my/wakatime_setup">hackatime.hackclub.com/my/wakatime_setup</a> and follow the setup guide for your editor. Hackatime works with VS Code, Neovim, JetBrains IDEs, and any editor that supports WakaTime. If your editor isn't supported, use <a href="https://lapse.hackclub.com">Lapse</a> to record a time-lapse instead.</p>
+                    </div>
+                </details>
+
+                <details class="faqitem">
+                    <summary class="faqsummary">How do I get support for my HCB organization?</summary>
+                    <div class="faqbody">
+                        <p>For general questions, post in <a href="https://hackclub.enterprise.slack.com/archives/CN523HLKW">#hcb</a> on Slack. For urgent issues (lost card, frozen funds), email <a href="mailto:hcb@hackclub.com">hcb@hackclub.com</a> or call <a href="tel:18442372290">1-844-237-2290</a>.</p>
+                    </div>
+                </details>
+
+                <details class="faqitem">
+                    <summary class="faqsummary">I can't find the help channel for my event. What do I do?</summary>
+                    <div class="faqbody">
+                        <p>Drop a message in <a href="https://hackclub.enterprise.slack.com/archives/C07TM4C0AQ5">#help</a> on Slack and someone will point you to the right place. You can also search the event channels below — if yours isn't listed, #help is the right place to start.</p>
+                    </div>
+                </details>
+
+                <details class="faqitem">
+                    <summary class="faqsummary">What is the Hack Club phone number?</summary>
+                    <div class="faqbody">
+                        <p>You can reach Hack Club toll-free at <a href="tel:18556254225">1-855-625-HACK (4225)</a>. For urgent HCB banking issues specifically, call <a href="tel:18442372290">1-844-237-2290</a>.</p>
+                    </div>
+                </details>
+
             </div>
         </section>
 
@@ -86,25 +145,29 @@
 
             <div class="faqgrid container wide">
                 <div class="card bordered">
-                    <div class="icon"><span class="emoji" aria-hidden="true">✨</span></div>
+                    <div class="icon icon-svg">
+                        <img src="https://icons.hackclub.com/api/icons/ec3750/clubs" alt="" class="iconimg" />
+                    </div>
                     <h3>Apply to start a Hack Club</h3>
                     <p>Any student can lead a Hack Club at their school, or turn their coding club into a Hack Club.</p>
                     <a href="https://apply.hackclub.com/" class="cardlink">Start your application</a>
                 </div>
 
                 <div class="card">
-                    <div class="icon"><span class="emoji" aria-hidden="true">🔨</span></div>
+                    <div class="icon icon-svg">
+                        <img src="https://icons.hackclub.com/api/icons/ec3750/leaders" alt="" class="iconimg" />
+                    </div>
                     <h3>Manage your club online</h3>
                     <p>The Leaders Portal helps you manage club members and set up workshops.</p>
                     <a href="https://leaders.hackclub.com/" class="cardlink">Go to the leaders' portal</a>
                 </div>
 
                 <div class="card">
-                    <div class="icon"><img src="images/identity-vault.png" alt="identityvault" class="iconimg" /></div>
+                    <div class="icon"><img src="images/identity-vault.png" alt="" class="iconimg" /></div>
                     <h3>Support managing my club</h3>
                     <p>If you need help with club related operations, leave a post on #leaders.</p>
                     <a href="https://hackclub.enterprise.slack.com/archives/C02PA5G01ND"
-                        class="cardlink">Contact support for Hack Club clubs</a>
+                        class="cardlink">Contact support for Hack Club clubs</a>
                 </div>
             </div>
         </section>
@@ -116,23 +179,26 @@
 
             <div class="faqgrid container wide">
                 <div class="card bordered">
-                    <div class="icon"><span class="emoji" aria-hidden="true">🪪</span></div>
+                    <div class="icon icon-svg">
+                        <img src="https://icons.hackclub.com/api/icons/ec3750/profile" alt="" class="iconimg" />
+                    </div>
                     <h3>Upload my ID</h3>
-                    <p>Use Hack Club Auth to upload your ID to prove you're a teen and participate in Hack Club events.
-                    </p>
+                    <p>Use Hack Club Auth to upload your ID to prove you're a teen and participate in Hack Club events.</p>
                     <a href="https://auth.hackclub.com/verifications/document" class="cardlink">Start identity
                         verification</a>
                 </div>
 
                 <div class="card">
-                    <div class="icon"><span class="emoji" aria-hidden="true">✏️</span></div>
+                    <div class="icon icon-svg">
+                        <img src="https://icons.hackclub.com/api/icons/ec3750/edit" alt="" class="iconimg" />
+                    </div>
                     <h3>Update my information</h3>
                     <p>Manage your mailing address, name, and other information we have on file.</p>
                     <a href="https://auth.hackclub.com/" class="cardlink">Update my info</a>
                 </div>
 
                 <div class="card">
-                    <div class="icon"><img src="images/identity-vault.png" alt="identityvault" class="iconimg" /></div>
+                    <div class="icon"><img src="images/identity-vault.png" alt="" class="iconimg" /></div>
                     <h3>Support updating my information or verifying ID</h3>
                     <p>If you need help updating your information, leave a post on #identity-help.</p>
                     <a href="https://hackclub.enterprise.slack.com/archives/C092833JXKK" class="cardlink">Contact
@@ -140,8 +206,7 @@
                 </div>
 
                 <div class="card bordered">
-                    <div class="icon"><img src="images/web-development.png" alt="Web development" class="iconimg" />
-                    </div>
+                    <div class="icon"><img src="images/web-development.png" alt="" class="iconimg" /></div>
                     <h3>Developing with Hack Club Auth</h3>
                     <p>See documentation for using Hack Club Auth for authentication in your apps.</p>
                     <a href="https://auth.hackclub.com/docs/welcome" class="cardlink">Developer documentation</a>
@@ -156,7 +221,7 @@
                 teen organizations get non-profit status and a platform to move money.</p>
             <div class="faqgrid container wide">
                 <div class="card">
-                    <div class="icon"><img src="images/hcb-card.png" alt="HCB card" class="iconimg" /></div>
+                    <div class="icon"><img src="images/hcb-card.png" alt="" class="iconimg" /></div>
                     <h3>Manage my money online</h3>
                     <p>Use HCB's online platform to manage your fiscal sponsorship, see and move money, send invoices,
                         and add collaborators.</p>
@@ -164,7 +229,7 @@
                 </div>
 
                 <div class="card">
-                    <div class="icon"><img src="images/hcb-mobile.png" alt="HCB Mobile" class="iconimg" /></div>
+                    <div class="icon"><img src="images/hcb-mobile.png" alt="" class="iconimg" /></div>
                     <h3>Use HCB on a mobile device</h3>
                     <p>HCB Mobile allows you to manage your HCB organizations on the go.</p>
                     <a href="https://play.google.com/store/apps/details?id=com.hackclub.hcb" class="cardlink">Download
@@ -176,15 +241,14 @@
                 </div>
 
                 <div class="card">
-                    <div class="icon"><img src="images/hcb.png" alt="HCB" class="iconimg" /></div>
+                    <div class="icon"><img src="images/hcb.png" alt="" class="iconimg" /></div>
                     <h3>Apply for a fiscal sponsorship</h3>
-                    <p>HCB provides your organization a 501(c)(3) status and an online platform to manage your money.
-                    </p>
+                    <p>HCB provides your organization a 501(c)(3) status and an online platform to manage your money.</p>
                     <a href="https://hcb.hackclub.com/applications/new" class="cardlink">Start my application</a>
                 </div>
 
                 <div class="card bordered">
-                    <div class="icon"><img src="images/card-file-box.png" alt="card-box" class="iconimg" /></div>
+                    <div class="icon"><img src="images/card-file-box.png" alt="" class="iconimg" /></div>
                     <h3>Event grants support</h3>
                     <p>For support about money granted by a Hack Club event, contact the event manager.</p>
                     <a href="https://hackclub.enterprise.slack.com/docs/T0266FRGM/F0AR3EQK621?focus_section_id=temp:C:UXE23dff5ede49a43e4b8930600b"
@@ -192,16 +256,15 @@
                 </div>
 
                 <div class="card bordered">
-                    <div class="icon"><img src="images/blob-help.png" alt="help" class="iconimg" /></div>
+                    <div class="icon"><img src="images/blob-help.png" alt="" class="iconimg" /></div>
                     <h3>Support for HCB</h3>
-                    <p>If you need help managing or applying for a fiscal sponsorship, leave a post on the #hcb channel.
-                    </p>
+                    <p>If you need help managing or applying for a fiscal sponsorship, leave a post on the #hcb channel.</p>
                     <a href="https://hackclub.enterprise.slack.com/archives/CN523HLKW" class="cardlink">Contact support
                         for HCB</a>
                 </div>
 
                 <div class="card urgent">
-                    <div class="icon"><img src="images/hcbparty.gif" alt="HCB party" class="iconimg" /></div>
+                    <div class="icon"><img src="images/hcbparty.gif" alt="" class="iconimg" /></div>
                     <h3>Urgent inquiries about HCB</h3>
                     <p>If you need urgent or immediate help with your HCB organization, email HCB support at hcb@hackclub.com, or call HCB support at
                         +1 (844)237-2290.</p>
@@ -218,7 +281,7 @@
                 for hours verification.</p>
             <div class="faqgrid container wide">
                 <div class="card">
-                    <div class="icon"><img src="images/hackatime.png" alt="hackatime" class="iconimg" /></div>
+                    <div class="icon"><img src="images/hackatime.png" alt="" class="iconimg" /></div>
                     <h3>Setup Hackatime with my editor</h3>
                     <p>Start logging your hours by connecting Hackatime with your editor. Hackatime can connect to any
                         editor or application that supports Wakatime.</p>
@@ -227,7 +290,7 @@
                 </div>
 
                 <div class="card">
-                    <div class="icon"><img src="images/lapse.png" alt="lapse" class="iconimg" /></div>
+                    <div class="icon"><img src="images/lapse.png" alt="" class="iconimg" /></div>
                     <h3>Setup Lapse time-lapse tracking</h3>
                     <p>If Hackatime is not compatible with your editor, use Lapse to record a time-lapse of an activity
                         to log hours.</p>
@@ -235,7 +298,7 @@
                 </div>
 
                 <div class="card bordered">
-                    <div class="icon"><img src="images/ban.png" alt="ban" class="iconimg" /></div>
+                    <div class="icon"><img src="images/ban.png" alt="" class="iconimg" /></div>
                     <h3>Fraud related inquiries</h3>
                     <p>If you have been banned due to suspected fraud, please go to <a
                             href="https://fraud.hackclub.com">fraud.hackclub.com</a> for next steps. Contact the Fraud Department at
@@ -245,7 +308,7 @@
                 </div>
 
                 <div class="card">
-                    <div class="icon"><img src="images/blob-help.png" alt="help" class="iconimg" /></div>
+                    <div class="icon"><img src="images/blob-help.png" alt="" class="iconimg" /></div>
                     <h3>Help setting up or using Hackatime</h3>
                     <p>If you are having issues setting up or using Hackatime in your editor, leave a post on the
                         #hackatime-help channel.</p>
@@ -254,7 +317,9 @@
                 </div>
 
                 <div class="card bordered">
-                    <div class="icon"><span class="emoji" aria-hidden="true">❓</span></div>
+                    <div class="icon icon-svg">
+                        <img src="https://icons.hackclub.com/api/icons/ec3750/help" alt="" class="iconimg" />
+                    </div>
                     <h3>Help setting up or using Lapse</h3>
                     <p>If you are having issues setting up or using <a href="https://lapse.hackclub.com">Lapse</a> for time-lapse based time tracking, leave a
                         post on the #lapse-help channel.</p>
@@ -266,18 +331,14 @@
 
         <section class="section alt" id="general">
             <div class="helpcard">
-                <h2 class="title" style="
-                display: flex; 
-                align-items: center; 
-                justify-content: center; 
-                gap: 10px;
-                ">
-                    Not sure where to ask?<img src="images/hc-help.png" alt="help-logo" class="emoji-help" />
+                <h2 class="helpcard-title title">
+                    Not sure where to ask?
+                    <img src="images/hc-help.png" alt="" class="emoji-help" />
                 </h2>
                 <p>Drop a message in <strong>#help</strong>, and we'll guide you to the right place.</p>
                 <div class="mt4">
                     <a href="https://hackclub.enterprise.slack.com/archives/C07TM4C0AQ5" class="btn primarybtn">
-                        <img src="https://icons.hackclub.com/api/icons/white/slack" class="herolinkdescicon">
+                        <img src="https://icons.hackclub.com/api/icons/white/slack" class="herolinkdescicon" alt="">
                         Go to the Help Channel
                     </a>
                 </div>
