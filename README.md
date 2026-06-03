@@ -10,4 +10,4 @@ Found an issue or want to improve something? Contributions are welcome! Feel fre
 
 Built and maintained by **[Dheeraj](https://github.com/17sdheeraj)**, **[Sankarshan](https://github.com/Sankarshan-T)**, **[normalperson543](https://github.com/normalperson543)** and the **#help team** :)
 
-Made with lots of coffee ☕
+Made with lots of coffee ☕.
