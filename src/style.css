@@ -1578,13 +1578,12 @@ body.dark-theme .faqitem[open] {
 
 .card {
     border-radius: 5px;
+    box-shadow:
+        0 1px 3px rgba(0,0,0,.04),
+        0 8px 24px rgba(0,0,0,.04);
 }
 
-box-shadow:
-    0 1px 3px rgba(0,0,0,.04),
-    0 8px 24px rgba(0,0,0,.04);
-
-    .card:hover {
+.card:hover {
     transform: translateY(-2px);
 }
 
